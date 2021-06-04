@@ -1,1 +1,3 @@
-console.log('Hello')
+import pageContent from './content';
+
+pageContent();
