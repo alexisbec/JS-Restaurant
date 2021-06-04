@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: 0.5s;
 }
 
 body {
   min-height: 100vh;
-  background-image: url(./img/background.png);
+  background-image: url(./background.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -32,6 +33,26 @@ nav {
   font-weight: 700;
 }
 
+.nav-button {
+  font-family: 'Indie Flower', cursive;
+  background: none;
+  font-size: 1.3em;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  color: #2f5d62;
+}
+
+.nav-button.active {
+  border-bottom: 2px solid goldenrod;
+}
+
+.nav-button:hover {
+  transform: translateY(-10%);
+}
 
 footer {
   position: fixed;

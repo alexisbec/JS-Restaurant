@@ -1,4 +1,6 @@
+import contactContent from './contact';
 import homeContent from './home';
+import menuContent from './menu';
 
 function navBar() {
   const nav = document.createElement('nav');
@@ -13,7 +15,7 @@ function navBar() {
 
   const contactButton = document.createElement('button');
   contactButton.classList.add('nav-button');
-  contactButton.textContent = 'Home';
+  contactButton.textContent = 'Contact';
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
@@ -43,7 +45,7 @@ function footer() {
 function pageContent() {
   const content = document.querySelector('#content');
 
-  content.appendChild(nav());
+  content.appendChild(navBar());
   content.appendChild(main());
   content.appendChild(footer());
 
