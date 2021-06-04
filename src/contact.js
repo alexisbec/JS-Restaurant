@@ -5,7 +5,7 @@ function contact() {
   const hOne = document.createElement('h1');
   hOne.textContent = "Contact";
   hOne.classList.add('title');
-  ontact.appendChild(hOne);
+  contact.appendChild(hOne);
 
   return contact;
 }
