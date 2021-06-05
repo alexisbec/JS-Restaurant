@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  background-image: url(./background.png);
+  background-image: url(./img/background.png);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -17,7 +17,10 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #fff;
 }
+
+/*************************** NavBar ***************************/
 
 nav {
   position: fixed;
@@ -29,16 +32,28 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 7vh;
-  font-size: 1.6em;
-  font-weight: 700;
+  z-index: 100;
+}
+
+.logo {
+  height: 3em;
+  width: auto;
+  cursor: pointer;
 }
 
 .nav-button {
   font-family: 'Indie Flower', cursive;
   background: none;
-  font-size: 1.3em;
   border: none;
   cursor: pointer;
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+
+.nav-button.active {
+  border-bottom: 3px solid #2f5d62;
+  border-top: 3px solid #2f5d62;
 }
 
 .nav-button:hover {
@@ -46,13 +61,79 @@ nav {
   color: #2f5d62;
 }
 
-.nav-button.active {
-  border-bottom: 2px solid goldenrod;
+/*************************** Home ***************************/
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.nav-button:hover {
-  transform: translateY(-10%);
+.slogan {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 1.5em;
 }
+
+/*************************** Menu ***************************/
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vh 0;
+}
+
+.menu-title {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.menu-img {
+  height: 20em;
+  width: auto;
+  cursor: pointer;
+  margin-top: 1.5em;
+}
+
+.menu-img:hover {
+  transform: scale(1.1);
+}
+
+.menu-p {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+/*************************** Contact ***************************/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 2.3em;
+  margin-bottom: 1em;
+}
+
+.contact-p {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.map {
+  height: 35em;
+  width: auto;
+}
+
+/*************************** Footer ***************************/
 
 footer {
   position: fixed;

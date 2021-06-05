@@ -1,9 +1,14 @@
 import contactContent from './contact';
 import homeContent from './home';
 import menuContent from './menu';
+import Logo from './img/logo.png';
 
 function navBar() {
   const nav = document.createElement('nav');
+
+  const navLogo = new Image();
+  navLogo.src = Logo;
+  navLogo.classList.add('logo');
 
   const homeButton = document.createElement('button');
   homeButton.classList.add('nav-button');
@@ -32,6 +37,7 @@ function navBar() {
     contactContent();
   });
 
+  nav.appendChild(navLogo);
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
   nav.appendChild(contactButton);

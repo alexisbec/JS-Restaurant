@@ -1,15 +1,18 @@
+import Logo from './img/logo.png';
+
 function home() {
   const home = document.createElement('div');
   home.classList.add('home');
 
-  const hOne = document.createElement('h1');
-  hOne.textContent = "Restaurant Name";
-  hOne.classList.add('title');
-  home.appendChild(hOne);
+  const homeLogo = new Image();
+  homeLogo.src = Logo;
+  homeLogo.classList.add('home-logo');
 
   const p = document.createElement('p');
   p.textContent = "The best food option in your country";
   p.classList.add("slogan");
+
+  home.appendChild(homeLogo);
   home.appendChild(p);
 
   return home;
