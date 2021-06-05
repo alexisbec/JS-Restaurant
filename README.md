@@ -12,9 +12,6 @@
 - Javascript
 - Webpack
 
-## Live Demo
-
-You can visit [here]() my app.
 
 ## Getting Started
 
