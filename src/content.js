@@ -3,6 +3,18 @@ import homeContent from './home';
 import menuContent from './menu';
 import Logo from './img/logo.png';
 
+function activeButton(button) {
+  const buttons = document.querySelectorAll('.nav-button');
+
+  buttons.forEach((button) => {
+    if (button !== this) {
+      button.classList.remove('active');
+    }
+  });
+
+  button.classList.add('active');
+}
+
 function navBar() {
   const nav = document.createElement('nav');
 
@@ -45,20 +57,8 @@ function navBar() {
   return nav;
 }
 
-function activeButton(button) {
-  const buttons = document.querySelectorAll('.nav-button');
-
-  buttons.forEach((button) => {
-    if (button !== this) {
-      button.classList.remove('active');
-    }
-  });
-
-  button.classList.add('active');
-}
-
 function main() {
-  const main = document.createElement('div')
+  const main = document.createElement('div');
   main.setAttribute('id', 'main');
 
   return main;

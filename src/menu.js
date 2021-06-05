@@ -11,56 +11,56 @@ function menu() {
   menu.classList.add('menu');
 
   const hOne = document.createElement('h1');
-  hOne.textContent = "Menu";
+  hOne.textContent = 'Menu';
   hOne.classList.add('menu-title');
 
   const menuSoups = new Image();
   menuSoups.src = Soups;
   menuSoups.classList.add('menu-img');
   const menuOne = document.createElement('p');
-  menuOne.textContent = "Soups";
+  menuOne.textContent = 'Soups';
   menuOne.classList.add('menu-p');
 
   const menuWines = new Image();
   menuWines.src = Wines;
   menuWines.classList.add('menu-img');
   const menuTwo = document.createElement('p');
-  menuTwo.textContent = "Wines";
+  menuTwo.textContent = 'Wines';
   menuTwo.classList.add('menu-p');
 
   const menuSalads = new Image();
   menuSalads.src = Salads;
   menuSalads.classList.add('menu-img');
   const menuThree = document.createElement('p');
-  menuThree.textContent = "Salads";
+  menuThree.textContent = 'Salads';
   menuThree.classList.add('menu-p');
 
   const menuHam = new Image();
   menuHam.src = Hamburguers;
   menuHam.classList.add('menu-img');
   const menuFour = document.createElement('p');
-  menuFour.textContent = "Hamburguers";
+  menuFour.textContent = 'Hamburguers';
   menuFour.classList.add('menu-p');
 
   const menuPizzas = new Image();
   menuPizzas.src = Pizzas;
   menuPizzas.classList.add('menu-img');
   const menuFive = document.createElement('p');
-  menuFive.textContent = "Pizzas";
+  menuFive.textContent = 'Pizzas';
   menuFive.classList.add('menu-p');
 
   const menuPastas = new Image();
   menuPastas.src = Pastas;
   menuPastas.classList.add('menu-img');
   const menuSix = document.createElement('p');
-  menuSix.textContent = "Pastas";
+  menuSix.textContent = 'Pastas';
   menuSix.classList.add('menu-p');
 
   const menuDesserts = new Image();
   menuDesserts.src = Desserts;
   menuDesserts.classList.add('menu-img');
   const menuSeven = document.createElement('p');
-  menuSeven.textContent = "Desserts";
+  menuSeven.textContent = 'Desserts';
   menuSeven.classList.add('menu-p');
 
   menu.appendChild(hOne);
@@ -79,7 +79,7 @@ function menu() {
   menu.appendChild(menuDesserts);
   menu.appendChild(menuSeven);
 
-  return menu
+  return menu;
 }
 
 function menuContent() {

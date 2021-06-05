@@ -9,8 +9,8 @@ function home() {
   homeLogo.classList.add('home-logo');
 
   const p = document.createElement('p');
-  p.textContent = "The best food option in your country";
-  p.classList.add("slogan");
+  p.textContent = 'The best food option in your country';
+  p.classList.add('slogan');
 
   home.appendChild(homeLogo);
   home.appendChild(p);
