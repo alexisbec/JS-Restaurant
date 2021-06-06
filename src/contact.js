@@ -1,6 +1,6 @@
 import Map from './img/location.png';
 
-function contact() {
+const contact = () => {
   const contact = document.createElement('div');
   contact.classList.add('contact');
 
@@ -23,7 +23,7 @@ function contact() {
   return contact;
 }
 
-function contactContent() {
+const contactContent = () => {
   const main = document.querySelector('#main');
   main.innerHTML = '';
   main.appendChild(contact());

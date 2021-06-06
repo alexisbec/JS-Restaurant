@@ -3,7 +3,7 @@ import homeContent from './home';
 import menuContent from './menu';
 import Logo from './img/logo.png';
 
-function activeButton(button) {
+const activeButton = (button) => {
   const buttons = document.querySelectorAll('.nav-button');
 
   buttons.forEach((button) => {
@@ -15,7 +15,7 @@ function activeButton(button) {
   button.classList.add('active');
 }
 
-function navBar() {
+const navBar = () => {
   const nav = document.createElement('nav');
 
   const navLogo = new Image();
@@ -57,14 +57,14 @@ function navBar() {
   return nav;
 }
 
-function main() {
+const main = () => {
   const main = document.createElement('div');
   main.setAttribute('id', 'main');
 
   return main;
 }
 
-function footer() {
+const footer = () => {
   const footer = document.createElement('footer');
 
   const copyright = document.createElement('p');
@@ -75,7 +75,7 @@ function footer() {
   return footer;
 }
 
-function pageContent() {
+const pageContent = () => {
   const content = document.querySelector('#content');
 
   content.appendChild(navBar());

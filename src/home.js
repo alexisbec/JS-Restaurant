@@ -1,6 +1,6 @@
 import Logo from './img/logo.png';
 
-function home() {
+const home = () => {
   const home = document.createElement('div');
   home.classList.add('home');
 
@@ -18,7 +18,7 @@ function home() {
   return home;
 }
 
-function homeContent() {
+const homeContent = () => {
   const main = document.querySelector('#main');
   main.innerHTML = '';
   main.appendChild(home());

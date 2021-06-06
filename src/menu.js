@@ -6,7 +6,7 @@ import Pizzas from './img/pizzas.png';
 import Pastas from './img/pastas.png';
 import Desserts from './img/desserts.png';
 
-function menu() {
+const menu = () => {
   const menu = document.createElement('div');
   menu.classList.add('menu');
 
@@ -82,7 +82,7 @@ function menu() {
   return menu;
 }
 
-function menuContent() {
+const menuContent = () => {
   const main = document.querySelector('#main');
   main.innerHTML = '';
   main.appendChild(menu());
