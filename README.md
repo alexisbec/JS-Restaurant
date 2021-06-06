@@ -12,6 +12,9 @@
 - Javascript
 - Webpack
 
+## Live Demo
+
+Click [here](https://alexisbec.github.io/JS-Restaurant/) to watch the live demo.
 
 ## Getting Started
 
