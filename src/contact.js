@@ -21,7 +21,7 @@ const contact = () => {
   contact.appendChild(img);
 
   return contact;
-}
+};
 
 const contactContent = () => {
   const main = document.querySelector('#main');
@@ -29,6 +29,6 @@ const contactContent = () => {
   main.appendChild(contact());
 
   return main;
-}
+};
 
 export default contactContent;

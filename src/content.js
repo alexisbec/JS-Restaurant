@@ -13,7 +13,7 @@ const activeButton = (button) => {
   });
 
   button.classList.add('active');
-}
+};
 
 const navBar = () => {
   const nav = document.createElement('nav');
@@ -55,14 +55,14 @@ const navBar = () => {
   nav.appendChild(contactButton);
 
   return nav;
-}
+};
 
 const main = () => {
   const main = document.createElement('div');
   main.setAttribute('id', 'main');
 
   return main;
-}
+};
 
 const footer = () => {
   const footer = document.createElement('footer');
@@ -73,7 +73,7 @@ const footer = () => {
   footer.appendChild(copyright);
 
   return footer;
-}
+};
 
 const pageContent = () => {
   const content = document.querySelector('#content');
@@ -84,6 +84,6 @@ const pageContent = () => {
 
   activeButton(document.querySelector('.nav-button'));
   homeContent();
-}
+};
 
 export default pageContent;

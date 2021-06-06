@@ -80,7 +80,7 @@ const menu = () => {
   menu.appendChild(menuSeven);
 
   return menu;
-}
+};
 
 const menuContent = () => {
   const main = document.querySelector('#main');
@@ -88,6 +88,6 @@ const menuContent = () => {
   main.appendChild(menu());
 
   return main;
-}
+};
 
 export default menuContent;

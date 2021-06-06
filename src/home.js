@@ -16,7 +16,7 @@ const home = () => {
   home.appendChild(p);
 
   return home;
-}
+};
 
 const homeContent = () => {
   const main = document.querySelector('#main');
@@ -24,6 +24,6 @@ const homeContent = () => {
   main.appendChild(home());
 
   return main;
-}
+};
 
 export default homeContent;
