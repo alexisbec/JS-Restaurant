@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: 0.5s;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(./img/background.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Indie Flower', cursive;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+/*************************** NavBar ***************************/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #5e8b7e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 7vh;
+  z-index: 100;
+}
+
+.logo {
+  height: 3em;
+  width: auto;
+  cursor: pointer;
+}
+
+.nav-button {
+  font-family: 'Indie Flower', cursive;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.7em;
+  font-weight: 800;
+}
+
+.nav-button.active {
+  border-bottom: 3px solid #2f5d62;
+  border-top: 3px solid #2f5d62;
+}
+
+.nav-button:hover {
+  transform: scale(1.1);
+  color: #2f5d62;
+}
+
+/*************************** Home ***************************/
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slogan {
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 1.2em;
+}
+
+/*************************** Menu ***************************/
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vh 0;
+}
+
+.menu-title {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.menu-img {
+  height: 20em;
+  width: auto;
+  cursor: pointer;
+  margin-top: 1.5em;
+}
+
+.menu-img:hover {
+  transform: scale(1.1);
+}
+
+.menu-p {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+/*************************** Contact ***************************/
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-title {
+  font-size: 2.3em;
+  margin-bottom: 1em;
+}
+
+.contact-p {
+  font-size: 1.8em;
+  margin-bottom: 1em;
+}
+
+.map {
+  height: 35em;
+  width: auto;
+}
+
+/*************************** Footer ***************************/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 7vh;
+  font-size: 1.4em;
+  background-color: #2f5d62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
